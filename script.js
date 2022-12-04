@@ -1,4 +1,4 @@
-const dateInput = document.querySelector(".date-input");
+const dateInputSpace = document.querySelector(".date-input");
 const okButton = document.querySelector("button");
 okButton.addEventListener("click", () => {
   changePicture();
@@ -6,7 +6,7 @@ okButton.addEventListener("click", () => {
 
 async function changePicture() {
   const res = await fetch(
-    `https://api.nasa.gov/planetary/apod?api_key=tNhJ9xKv5GoWuqCYm0TEaH2K0yGtV9BpZeTN6guF&date=${dateInput.value}`
+    `https://api.nasa.gov/planetary/apod?api_key=88u7Vdtn2mchlreadL3NV33PEHngIuuEStrURSXH&date=${dateInputSpace.value}`
   );
   const data = await res.json();
 
